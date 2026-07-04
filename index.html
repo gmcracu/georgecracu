@@ -45,6 +45,21 @@ html[data-theme="light"]{--bg:#faf9f5;--bg2:#ece8df;--text:#101418;--muted:#5961
 .tools{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}.tools input,.tools select{background:var(--glass);border:1px solid var(--line);color:var(--text);padding:14px 16px;border-radius:14px;min-width:240px}
 .publication-feature{display:grid;grid-template-columns:.65fr 1fr;gap:22px;margin-bottom:22px}.pub-feature-card{padding:34px;border-radius:30px;background:linear-gradient(135deg,rgba(216,195,165,.16),var(--glass));border:1px solid var(--line)}
 .pub-feature-card h3{font-size:clamp(28px,4vw,48px);line-height:1.03;letter-spacing:-.055em;margin:12px 0}.pub-feature-card p{color:var(--muted);line-height:1.6}.publication-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.pub-group{border:1px solid var(--line);border-radius:26px;background:var(--glass);overflow:hidden}.pub-group-head{padding:22px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.04)}.pub-group-head h3{margin:0;font-size:22px;letter-spacing:-.035em}.pub-item{padding:20px 22px;border-bottom:1px solid var(--line)}.pub-item:last-child{border-bottom:0}.pub-meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--accent);font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.pub-item h4{font-size:17px;letter-spacing:-.025em;line-height:1.25;margin:10px 0}.pub-item p{color:var(--muted);line-height:1.5;font-size:14px}.pub-item a,.pub-feature-card a{display:inline-flex;margin-top:10px;color:var(--accent2);font-weight:800}.split{display:grid;grid-template-columns:.65fr 1fr;gap:50px}.sticky-title{position:sticky;top:110px;align-self:start}.project-stack{display:grid;gap:18px}.project-card{padding:34px;border-radius:28px;background:linear-gradient(135deg,var(--glass2),var(--glass));border:1px solid var(--line)}.project-card h3{font-size:32px;letter-spacing:-.045em;margin:0 0 10px}.project-card p{color:var(--muted);line-height:1.65}.course-grid,.field-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.course,.field{border:1px solid var(--line);background:var(--glass);border-radius:22px;padding:24px;min-height:180px}.course h3,.field h3{font-size:22px;letter-spacing:-.035em}.course p,.field p{color:var(--muted);line-height:1.55}.field{min-height:260px;background:linear-gradient(160deg,var(--glass),rgba(216,195,165,.06))}.contact{padding:130px clamp(24px,6vw,96px);background:linear-gradient(135deg,#070b10,#10202a);border-top:1px solid var(--line)}.contact-inner{max-width:1050px}.reveal{opacity:0;transform:translateY(22px);transition:opacity .75s ease, transform .75s ease}.reveal.in{opacity:1;transform:none}.delay-1{transition-delay:.15s}
+
+.map-art{position:absolute;inset:0;width:100%;height:100%;z-index:1;opacity:.72;filter:drop-shadow(0 20px 45px rgba(0,0,0,.25))}
+.map-art .land{fill:rgba(216,195,165,.12);stroke:rgba(255,255,255,.34);stroke-width:1.5}
+.map-art .sea{fill:rgba(137,194,217,.14);stroke:rgba(137,194,217,.18);stroke-width:1}
+.map-art .river{fill:none;stroke:rgba(137,194,217,.45);stroke-width:2;stroke-linecap:round}
+.map-art .contour{fill:none;stroke:rgba(255,255,255,.16);stroke-width:1}
+.map-art .label{fill:rgba(255,255,255,.42);font:700 12px Inter,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+html[data-theme="light"] .map-art .land{fill:rgba(61,90,64,.10);stroke:rgba(0,0,0,.22)}
+html[data-theme="light"] .map-art .sea{fill:rgba(15,76,92,.12)}
+html[data-theme="light"] .map-art .contour{stroke:rgba(0,0,0,.12)}
+html[data-theme="light"] .map-art .label{fill:rgba(0,0,0,.42)}
+.map-card ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:8px}.map-card li{border-top:1px solid var(--line);padding-top:8px}.map-card a{color:var(--accent2);font-weight:800}.map-card .empty{color:var(--muted);font-style:italic}
+.section-note{font-size:17px;color:var(--muted);line-height:1.65;max-width:760px}.pub-categories{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pub-category-card{border:1px solid var(--line);background:var(--glass);border-radius:28px;overflow:hidden}.pub-category-head{display:block;padding:24px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.04)}.pub-category-head:hover h3{color:var(--accent2)}.pub-category-head h3{margin:6px 0 0;font-size:28px;letter-spacing:-.045em}.pub-count{color:var(--muted);font-size:13px}.pub-category-list{padding:0;margin:0;list-style:none}.pub-category-list li{padding:20px 22px;border-bottom:1px solid var(--line)}.pub-category-list li:last-child{border-bottom:0}.apa{font-size:15px;line-height:1.55;color:var(--muted)}.apa strong{color:var(--text);font-weight:800}.pub-open{display:inline-block;margin-top:10px;color:var(--accent2);font-weight:900}
+@media (max-width:1050px){.pub-categories{grid-template-columns:1fr}.map-art{opacity:.56}}
+
 @media (max-width:1050px){.nav{display:none}.hero-content,.map-section,.split{grid-template-columns:1fr}.hero-portrait{max-width:520px}.snapshot,.research-grid,.course-grid,.field-grid,.publication-list,.publication-feature{grid-template-columns:1fr 1fr}.research-map{min-height:560px}.map-section{min-height:auto}}
 @media (max-width:640px){.brand-text{display:none}.hero-content{padding-left:20px;padding-right:20px}.snapshot,.research-grid,.publication-list,.course-grid,.field-grid{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--line)}.section{padding-top:80px;padding-bottom:80px}.tools{flex-direction:column}.tools input,.tools select{min-width:0;width:100%}.hero-copy h1{font-size:48px}.hero-portrait img{height:430px}}
 
@@ -145,17 +160,9 @@ html[data-theme="light"]{--bg:#faf9f5;--bg2:#ece8df;--text:#101418;--muted:#5961
       <div class="section-head reveal">
         <p class="eyebrow" data-i18n="pubKicker">Selected publications</p>
         <h2 data-i18n="pubTitle">Papers, chapters and research outputs.</h2>
-        <div class="tools">
-          <input id="pubSearch" type="search" placeholder="Search publications..." data-i18n-placeholder="pubSearch" />
-          <select id="pubFilter" aria-label="Publication filter">
-            <option value="all" data-i18n="filterAll">All</option>
-            <option value="isi">ISI</option>
-            <option value="bdi">BDI</option>
-            <option value="other" data-i18n="filterOther">Other</option>
-          </select>
-        </div>
+        <p class="section-note">Publicațiile sunt grupate pe categorii. Pe prima pagină apar ultimele trei lucrări din fiecare categorie; lista completă se deschide într-o pagină separată.</p>
       </div>
-      <div class="publication-list" id="publicationList"></div>
+      <div class="pub-categories" id="publicationList"></div>
     </section>
 
     <section class="section split full-width" id="projects">
@@ -216,10 +223,38 @@ const data={
   {title:{ro:'Mediu și schimbare',en:'Environmental Change'},text:{ro:'Riscuri climatice, peisaje și soluții pentru sustenabilitate.',en:'Climate risks, landscapes and sustainability solutions.'}}
  ],
  publications:[
-  {type:'isi',category:'Urban accessibility & GIS',featured:true,year:2024,journal:'Applied Geography',title:'A GIS-based assessment of pedestrian accessibility to urban parks in the city of Constanța, Romania',authors:'George-Marius Cracu, Andrei Schvab, Zoia Prefac, Marius Popescu, Igor Sîrodoev',doi:'https://doi.org/10.1016/j.apgeog.2024.103229'},
-  {type:'isi',category:'Tourism & sustainability',year:2022,journal:'Journal of Urban and Regional Analysis',title:'Tourism impact models as sustainable development planning tools for local and regional authorities',authors:'Andrei Schvab et al.',doi:'https://doi.org/10.37043/JURA.2022.14.2.3'},
-  {type:'isi',category:'Hazards & geomorphology',year:2016,journal:'Carpathian Journal of Environmental Sciences',title:'Assessment of landslide susceptibility using the certainty factor model: Răşcuţa catchment case study',authors:'Zoia Prefac, Sorina Dumitru, Viorel Chendeș, Igor Sîrodoev & George Cracu',doi:''},
-  {type:'bdi',category:'Remote sensing & land cover',year:2014,journal:'Cinq Continents',title:'Using remote sensing imagery and GIS to identify land cover and land use within Ceahlău Massif (Romania)',authors:'G. M. Cracu',doi:'http://cinqcontinents.geo.unibuc.ro/4/4_10_Cracu.pdf'}
+  {type:'wos',year:2024,journal:'Applied Geography',title:'A GIS-based assessment of pedestrian accessibility to urban parks in the city of Constanța, Romania',authors:'Cracu, G.-M., Schvab, A., Prefac, Z., Popescu, M., & Sîrodoev, I.',url:'https://doi.org/10.1016/j.apgeog.2024.103229',places:['Constanța']},
+  {type:'wos',year:2022,journal:'Journal of Urban and Regional Analysis',title:'Tourism impact models as sustainable development planning tools for local and regional authorities',authors:'Schvab, A., Văidianu, N., Sîrodoev, I., Ratkajec, H., Skolka, M., Tudor, M., Cracu, G., Paraschiv, M., Florea-Saghin, I., Starc-Peceny, U., Ilijaš, T., & Căluianu, C.',url:'https://doi.org/10.37043/JURA.2022.14.2.3',places:['Constanța','Năvodari / Mamaia-Sat']},
+  {type:'wos',year:2016,journal:'Carpathian Journal of Environmental Sciences',title:'Assessment of landslide susceptibility using the certainty factor model: Răşcuţa catchment (Curvature Subcarpathians) case study',authors:'Prefac, Z., Dumitru, S., Chendeș, V., Sîrodoev, I., & Cracu, G.',url:'http://www.cjees.ro/viewTopic.php?topicId=647',places:['Ceahlău Massif']},
+  {type:'wos',year:2012,journal:'Public recreation and landscape protection - hand in hand',title:'Aspects concerning for sustainable tourism development in rural space from Danube Delta',authors:'Popescu, M., Cracu, G. M., Urdea, C., & Prefac, Z.',url:'http://www.utok.cz/sites/default/files/data/USERS/u24/2012_RaOP.pdf',places:['Măcin Mountains']},
+  {type:'wos',year:2008,journal:'Geographia Technica',title:'Using GIS techniques to describe morphometrical features within the mountain hydrographical basin of Ialomiţa river',authors:'Cracu, G. M., & Popescu, M.',url:'http://technicalgeography.org/pdf/2_2008/gt_2_2008.pdf',places:['Moieciu']},
+  {type:'bdi',year:2021,journal:'Cinq Continents',title:'The power of digitalisation in relation to sustainable tourist development of Black Sea coastal areas',authors:'Schvab, A., Paraschiv, M., Tudor, M., Cracu, G., Florea-Saghin, I., Sîrodoev, I., Tătui-Văidianu, N., & Căluianu, C.',url:'https://cinqcontinents.geo.unibuc.ro/11/11_23_Vie_scientifique.pdf',places:['Constanța','Năvodari / Mamaia-Sat']},
+  {type:'bdi',year:2018,journal:'Analele Asociației Profesionale a Geografilor din România',title:'Analiza comparativă a monumentelor istorice de for public din Regiunile de dezvoltare Sud-Muntenia și Sud-Est (România)',authors:'Merciu, C., Tălângă, C., Braghină, C., Sîrodoev, I., Tătui-Văidianu, N., Paraschiv, M., Zamfir, D., Secăreanu, G., Cracu, G. M., Cercleux, L., Stoica, I.-V., & Florea-Saghin, I.',url:'',places:['Constanța']},
+  {type:'bdi',year:2016,journal:'International Journal of Cross-Cultural Studies and Environmental Communication',title:'Analyzing climate-tourism potential in Mamaia resort area using Tourism-Climate Index (TCI)',authors:'Cracu, G. M., Prefac, Z., & Tofan, L.',url:'https://crossculturenvironment.files.wordpress.com/2016/05/volum-complet.pdf',places:['Constanța','Năvodari / Mamaia-Sat']},
+  {type:'bdi',year:2014,journal:'Cinq Continents',title:'Using remote sensing imagery and GIS to identify land cover and land use within Ceahlău Massif (Romania)',authors:'Cracu, G. M.',url:'http://cinqcontinents.geo.unibuc.ro/4/4_10_Cracu.pdf',places:['Ceahlău Massif']},
+  {type:'bdi',year:2012,journal:'Scientific Research. Agricultural Management',title:'Considerations on oenotouristic potential from Constanta county',authors:'Popescu, M., Urdea, C., Prefac, Z., & Cracu, G. M.',url:'',places:['Constanța']},
+  {type:'bdi',year:2012,journal:'Scientific Research. Agricultural Management',title:'Aspects concerning of touristic potential of Niculitel village',authors:'Popescu, M., Cracu, G. M., Urdea, C., & Prefac, Z.',url:'',places:['Măcin Mountains']},
+  {type:'bdi',year:2012,journal:'Studii şi cercetări Geology-Geography',title:'Aspects concerning for sustainable tourism development in rural area from Dobrogea',authors:'Popescu, M., Urdea, C., Prefac, Z., & Cracu, G. M.',url:'',places:['Constanța','Măcin Mountains']},
+  {type:'bdi',year:2012,journal:'Studii şi cercetări Geology-Geography',title:'Climatic conditions’ influence on vineyard landscapes from Southern Romania',authors:'Popescu, M., Ranca, A., Prefac, Z., Cracu, G. M., & Urdea, C.',url:'',places:['Constanța']},
+  {type:'bdi',year:2010,journal:'Research Journal of Agricultural Science',title:'Droughts impacts on agricultural productivity in Dobrudja',authors:'Lungu, M., Panaitescu, L., Albu, A., Cracu, G. M., & Niţă, S.',url:'http://www.rjas.ro/index.php/rjas/article/view/455/446',places:['Constanța']},
+  {type:'bdi',year:2010,journal:'Research Journal of Agricultural Science',title:'Frost and thaw – climatic risk to crops in southern Dobrudja',authors:'Lungu, M., Panaitescu, L., Albu, A., Cracu, G. M., & Niţă, S.',url:'',places:['Constanța']},
+  {type:'bdi',year:2010,journal:'Scientific Papers, Series A. Agronomy',title:'Pedological implications of strong winds in south Dobrogea',authors:'Lungu, M., Panaitescu, L., & Cracu, G. M.',url:'',places:['Constanța']},
+  {type:'bdi',year:2010,journal:'Aerul şi apa. Componente ale Mediului',title:'Hail. A risk climatic phenomenon in Dobrogea',authors:'Lungu, M., Panaitescu, L., Cracu, G. M., & Niţă, S.',url:'',places:['Constanța']},
+  {type:'bdi',year:2010,journal:'Aerul şi apa. Componente ale Mediului',title:'Frost and thaw – Risk climatic phenomena in Dobrogea',authors:'Lungu, M., Panaitescu, L., Cracu, G. M., & Niţă, S.',url:'',places:['Constanța']},
+  {type:'bdi',year:2009,journal:'Research Journal of Agricultural Science',title:'Landscape analysis according to CORINE methodology of the Râmna hydrological basin',authors:'Prefac, Z., Urdea, M.-C., Popescu, M., & Cracu, G. M.',url:'',places:['Constanța']},
+  {type:'bdi',year:2009,journal:'Research Journal of Agricultural Science',title:'Aspects concerning the water requirement in vineyard agro-ecosystems from semi-arid areas from Romania',authors:'Popescu, M., Ranca, A., Prefac, Z., & Cracu, G. M.',url:'',places:['Constanța']},
+  {type:'bdi',year:2008,journal:'Research Journal of Agricultural Science',title:'The variety of agricultural landscapes from Mărculeşti plain, a method of sustainable organization of the space',authors:'Popescu, M., Panaitescu, L., Prefac, Z., & Cracu, G. M.',url:'',places:['Constanța']},
+  {type:'other',year:2013,journal:'Analele Universităţii “Ovidius” Constanţa, Seria Geografie',title:'Characterizing wet and dry periods in Dobrogea, Romania',authors:'Prefac, Z., Păltineanu, C., & Cracu, G. M.',url:'',places:['Constanța']},
+  {type:'other',year:2011,journal:'Analele Universităţii Ovidius din Constanţa, Seria Geografie',title:'Aspecte geografice privind conservarea biodiversităţii în Câmpia Bărăganului',authors:'Dumitrache, A.-M., Popescu, M., Cracu, G. M., & Urdea, M.-C.',url:'',places:['Constanța']},
+  {type:'other',year:2011,journal:'Analele Universităţii Ovidius din Constanţa, Seria Geografie',title:'Aspecte teoretice privind rolul ecoturismului în conservarea biodiversităţii',authors:'Popescu, M., Urdea, M.-C., Prefac, Z., & Cracu, G. M.',url:'',places:['Constanța']},
+  {type:'other',year:2010,journal:'Buletinul Direcţiei Hidrografice Maritime',title:'Impactul schimbărilor climatice asupra unor activităţi economice în Dobrogea: agricultură, industrie, turism',authors:'Bordânc, F., Popescu, M., Urdea, C., Cracu, G. M., Prefac, Z., & Petrov, C.',url:'',places:['Constanța']},
+  {type:'other',year:2010,journal:'Buletinul Direcţiei Hidrografice Maritime',title:'Impactul schimbărilor climatice asupra infrastructurii de transport, construcţiilor şi planificării urbane',authors:'Bordânc, F., Popescu, M., Urdea, C., Cracu, G. M., Prefac, Z., & Petrov, C.',url:'',places:['Constanța']},
+  {type:'other',year:2010,journal:'Buletinul Direcţiei Hidrografice Maritime',title:'Impactul schimbărilor climatice asupra biodiversităţii şi pădurilor',authors:'Albu, A., Cracu, G. M., Urdea, M.-C., Popescu, M., Lungu, M., & Pleşoianu, D.',url:'',places:['Constanța']},
+  {type:'other',year:2010,journal:'Buletinul Direcţiei Hidrografice Maritime',title:'Impactul schimbărilor climatice asupra sistemelor de alimentare cu apă şi de canalizare, precum şi consumului de energie',authors:'Pleşoianu, D., Popescu, M., Cracu, G. M., Urdea, M.-C., Albu, A., & Lungu, M.',url:'',places:['Constanța']},
+  {type:'other',year:2010,journal:'Buletinul Direcţiei Hidrografice Maritime',title:'Aspecte cantitative privind impactul schimbărilor climatice asupra stării de sănătate a populaţiei',authors:'Cracu, G. M., Urdea, M.-C., Popescu, M., & Bordânc, F.',url:'',places:['Constanța']},
+  {type:'other',year:2010,journal:'Buletinul Direcţiei Hidrografice Maritime',title:'Prognoza schimbărilor climatice în România',authors:'Bordânc, F., Boşneagu, R., Popescu, M., Urdea, M.-C., & Cracu, G. M.',url:'',places:['Constanța']},
+  {type:'other',year:2010,journal:'Buletinul Direcţiei Hidrografice Maritime',title:'Perspectiva reducerilor de GES în UE şi la nivel internaţional în scopul limitării încălzirii climatice',authors:'Bordânc, F., Boşneagu, R., Popescu, M., Urdea, M.-C., & Cracu, G. M.',url:'',places:['Constanța']},
+  {type:'other',year:2008,journal:'Lucrări științifice, Universitatea Ovidius din Constanța',title:'Evaluarea susceptibilității versanților la alunecările de teren în bazinul hidrografic al râului Plopeasa',authors:'Prefac, Z., Popescu, M., Cracu, G. M., & Urdea, C.',url:'',places:['Constanța']}
  ],
  projects:[
   {title:'DTEClimate',period:'2022–2025',text:{ro:'Centru de competență pentru Climate Change Digital Twin, prognoze și redresare societală.',en:'Competence Center for Climate Change Digital Twin, forecasts and societal redressment.'}},
@@ -237,12 +272,12 @@ const data={
   {title:{ro:'Ceahlău',en:'Ceahlău'},text:{ro:'Dinamică peisagistică, turism montan și cercetare doctorală.',en:'Landscape dynamics, mountain tourism and doctoral research.'}}
  ],
  places:[
-  {name:'Constanța',lat:44.1598,lng:28.6348,info:'Urban parks, accessibility, teaching and university activities.'},
-  {name:'Năvodari / Mamaia-Sat',lat:44.307,lng:28.625,info:'Tourism-driven coastal urbanisation and built-up dynamics.'},
-  {name:'Oradea',lat:47.0465,lng:21.9189,info:'GIS accessibility to urban parks and spatial equity.'},
-  {name:'Ceahlău Massif',lat:46.965,lng:25.945,info:'Landscape dynamics, remote sensing and mountain geography.'},
-  {name:'Măcin Mountains',lat:45.23,lng:28.18,info:'Fieldwork, protected areas and landscape interpretation.'},
-  {name:'Moieciu',lat:45.49,lng:25.32,info:'Mountain tourism, field practice and sport tourism.'}
+  {name:'Constanța',x:73,y:67,info:{ro:'Accesibilitate la parcuri urbane, activitate didactică și cercetare aplicată.',en:'Urban park accessibility, teaching and applied research.'}},
+  {name:'Năvodari / Mamaia-Sat',x:76,y:61,info:{ro:'Urbanizare turistică litorală și dinamică a spațiului construit.',en:'Tourism-driven coastal urbanisation and built-up dynamics.'}},
+  {name:'Oradea',x:24,y:30,info:{ro:'Accesibilitate GIS la parcuri urbane și echitate spațială.',en:'GIS accessibility to urban parks and spatial equity.'}},
+  {name:'Ceahlău Massif',x:50,y:45,info:{ro:'Dinamică peisagistică, teledetecție și geografie montană.',en:'Landscape dynamics, remote sensing and mountain geography.'}},
+  {name:'Măcin Mountains',x:69,y:48,info:{ro:'Practică de teren, arii protejate și interpretarea peisajului.',en:'Fieldwork, protected areas and landscape interpretation.'}},
+  {name:'Moieciu',x:44,y:57,info:{ro:'Turism montan, practică de teren și turism sportiv.',en:'Mountain tourism, field practice and sport tourism.'}}
  ]
 };
 function t(k){return i18n[state.lang][k]||k}
@@ -250,34 +285,21 @@ function applyLang(){document.documentElement.lang=state.lang;document.querySele
 function setTheme(){document.documentElement.dataset.theme=state.theme;document.getElementById('themeBtn').textContent=state.theme==='dark'?'☾':'☀';localStorage.setItem('theme',state.theme)}
 function renderAll(){renderResearch();renderPublications();renderProjects();renderCourses();renderFieldwork()}
 function renderResearch(){researchGrid.innerHTML=data.research.map(x=>`<article class="research-card reveal"><p class="eyebrow">${x.title[state.lang].split(' ')[0]}</p><h3>${x.title[state.lang]}</h3><p>${x.text[state.lang]}</p></article>`).join('');observe()}
+function apa(p){return `${p.authors} (${p.year}). ${p.title}. <em>${p.journal}</em>.`}
 function renderPublications(){
- const q=(pubSearch?.value||'').toLowerCase();const f=pubFilter?.value||'all';
- const pubs=data.publications.filter(p=>(f==='all'||p.type===f)&&(`${p.title} ${p.authors} ${p.journal} ${p.year} ${p.category||''}`.toLowerCase().includes(q))).sort((a,b)=>b.year-a.year);
- const featured=pubs.find(p=>p.featured)||pubs[0];
- const rest=pubs.filter(p=>p!==featured);
- const labels={isi:state.lang==='ro'?'Articole ISI / indexate major':'ISI / major indexed articles',bdi:state.lang==='ro'?'Articole BDI':'BDI articles',other:state.lang==='ro'?'Alte contribuții':'Other contributions'};
- const groups=['isi','bdi','other'].map(type=>({type,items:rest.filter(p=>p.type===type)})).filter(g=>g.items.length);
- const featureHtml=featured?`<div class="publication-feature reveal"><div class="pub-feature-card"><p class="eyebrow">${state.lang==='ro'?'Lucrare reprezentativă':'Featured paper'}</p><h3>${featured.title}</h3><p>${featured.authors}</p>${featured.doi?`<a href="${featured.doi}" target="_blank" rel="noopener">DOI / Link →</a>`:''}</div><div class="pub-feature-card"><p class="eyebrow">${featured.year} · ${featured.journal}</p><h3>${featured.category||''}</h3><p>${state.lang==='ro'?'Publicațiile sunt grupate tematic și pe tipuri, cu filtrare rapidă după an, revistă, autori sau cuvinte-cheie.':'Publications are grouped by type and theme, with quick filtering by year, journal, authors or keywords.'}</p></div></div>`:'';
- const groupsHtml=groups.map(g=>`<section class="pub-group reveal"><div class="pub-group-head"><p class="eyebrow">${g.type.toUpperCase()}</p><h3>${labels[g.type]}</h3></div>${g.items.map(p=>`<article class="pub-item"><div class="pub-meta"><span>${p.year}</span><span>${p.journal}</span></div><h4>${p.title}</h4><p>${p.authors}</p>${p.doi?`<a href="${p.doi}" target="_blank" rel="noopener">DOI / Link →</a>`:''}</article>`).join('')}</section>`).join('');
- publicationList.innerHTML=featureHtml+groupsHtml;observe()
+ const labels={wos:{title:'Articole indexate Web of Science',url:'publications-wos.html'},bdi:{title:'Articole indexate BDI',url:'publications-bdi.html'},other:{title:'Alte articole',url:'publications-other.html'}};
+ publicationList.innerHTML=['wos','bdi','other'].map(type=>{const items=data.publications.filter(p=>p.type===type).sort((a,b)=>b.year-a.year);return `<section class="pub-category-card reveal"><a class="pub-category-head" href="${labels[type].url}"><p class="eyebrow">${items.length} lucrări</p><h3>${labels[type].title}</h3><span class="pub-count">Click pentru lista completă, în stil APA →</span></a><ol class="pub-category-list">${items.slice(0,3).map(p=>`<li><div class="pub-meta"><span>${p.year}</span><span>${p.journal}</span></div><p class="apa">${apa(p)}</p>${p.url?`<a class="pub-open" href="${p.url}" target="_blank" rel="noopener">DOI / Link →</a>`:''}</li>`).join('')}</ol></section>`}).join('');observe()
 }
 function renderProjects(){projectStack.innerHTML=data.projects.map(p=>`<article class="project-card reveal"><p class="eyebrow">${p.period}</p><h3>${p.title}</h3><p>${p.text[state.lang]}</p></article>`).join('');observe()}
 function renderCourses(){courseGrid.innerHTML=data.courses.map(c=>`<article class="course reveal"><h3>${c[state.lang]}</h3><p>${state.lang==='ro'?'Curs universitar cu aplicații, exemple, hărți și activități practice.':'University course with applications, examples, maps and practical activities.'}</p></article>`).join('');observe()}
 function renderFieldwork(){fieldGrid.innerHTML=data.fieldwork.map(f=>`<article class="field reveal"><p class="eyebrow">Fieldwork</p><h3>${f.title[state.lang]}</h3><p>${f.text[state.lang]}</p></article>`).join('');observe()}
-function initMap(){
- const el=document.getElementById('researchMap'); if(!el)return;
- const positions={'Constanța':[72,64],'Năvodari / Mamaia-Sat':[75,58],'Oradea':[22,30],'Ceahlău Massif':[46,42],'Măcin Mountains':[70,45],'Moieciu':[44,57]};
- const first=data.places[0];
- el.innerHTML=`<div class="map-card" id="mapCard"><small>${state.lang==='ro'?'Geografia cercetării':'Research geography'}</small><h3>${first.name}</h3><p>${first.info}</p></div>`+
- data.places.map((p,i)=>{const xy=positions[p.name]||[50,50];return `<button class="map-pin" style="--x:${xy[0]}%;--y:${xy[1]}%" data-place="${i}" aria-label="${p.name}"><i></i><span>${p.name}</span></button>`}).join('');
- el.querySelectorAll('.map-pin').forEach(btn=>btn.addEventListener('click',()=>{const p=data.places[btn.dataset.place];document.getElementById('mapCard').innerHTML=`<small>${state.lang==='ro'?'Loc de cercetare / teren':'Research / fieldwork place'}</small><h3>${p.name}</h3><p>${p.info}</p>`}))
-}
+function mapBackground(){return `<svg class="map-art" viewBox="0 0 1000 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="sea" x="665" y="0" width="335" height="720"/><path class="land" d="M118 125 C205 68 314 92 392 122 C470 152 552 126 620 168 C704 220 720 304 670 365 C633 410 654 482 610 536 C548 612 423 624 342 585 C260 546 177 552 118 489 C55 421 77 333 103 275 C126 225 70 173 118 125Z"/><path class="river" d="M96 470 C190 500 252 472 320 506 C400 546 498 550 610 535 C662 528 705 552 746 610"/><path class="river" d="M635 180 C690 220 714 282 700 356 C690 410 706 462 735 515 C760 562 760 610 742 670"/><path class="contour" d="M160 180 C260 130 362 166 430 210 C505 260 600 240 650 300"/><path class="contour" d="M145 270 C245 228 326 254 416 300 C486 336 572 330 630 385"/><path class="contour" d="M160 365 C250 325 340 370 420 420 C500 470 560 450 625 500"/><path class="contour" d="M210 500 C305 460 395 500 470 548 C525 580 570 570 610 545"/><text class="label" x="730" y="315">Black Sea</text><text class="label" x="185" y="120">Romania</text><text class="label" x="630" y="640">Danube</text></svg>`}
+function initMap(){const el=document.getElementById('researchMap'); if(!el)return; const card=(p)=>{const related=data.publications.filter(pub=>(pub.places||[]).includes(p.name)).sort((a,b)=>b.year-a.year).slice(0,5);return `<small>${state.lang==='ro'?'Loc de cercetare / teren':'Research / fieldwork place'}</small><h3>${p.name}</h3><p>${p.info[state.lang]}</p>${related.length?`<ul>${related.map(pub=>`<li><a href="${pub.url||('#publications')}" ${pub.url?'target="_blank" rel="noopener"':''}>${pub.year} · ${pub.title}</a></li>`).join('')}</ul>`:`<p class="empty">${state.lang==='ro'?'Publicațiile asociate vor fi adăugate aici.':'Related publications will be added here.'}</p>`}`}; const first=data.places[0]; el.innerHTML=mapBackground()+`<div class="map-card" id="mapCard">${card(first)}</div>`+data.places.map((p,i)=>`<button class="map-pin" style="--x:${p.x}%;--y:${p.y}%" data-place="${i}" aria-label="${p.name}"><i></i><span>${p.name}</span></button>`).join(''); el.querySelectorAll('.map-pin').forEach(btn=>btn.addEventListener('click',()=>{const p=data.places[btn.dataset.place];document.getElementById('mapCard').innerHTML=card(p)}))}
 let observer;function observe(){if(observer)document.querySelectorAll('.reveal').forEach(el=>observer.observe(el))}
 observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 window.addEventListener('scroll',()=>document.querySelector('.site-header').classList.toggle('scrolled',window.scrollY>30));
 langBtn.addEventListener('click',()=>{state.lang=state.lang==='ro'?'en':'ro';applyLang()});themeBtn.addEventListener('click',()=>{state.theme=state.theme==='dark'?'light':'dark';setTheme()});
-pubSearch.addEventListener('input',renderPublications);pubFilter.addEventListener('change',renderPublications);
 setTheme();applyLang();initMap();
 
   </script>
