@@ -1,27 +1,31 @@
-# GeoPortfolio v1
+# GeoSphere v1 — George-Marius Cracu
 
-Site academic bilingv pentru GitHub Pages.
+Site academic fullscreen pentru GitHub Pages.
+
+## Publicare pe GitHub
+
+1. Dezarhivează ZIP-ul.
+2. În repository-ul `gmcracu.github.io`, apasă **Add file → Upload files**.
+3. Încarcă tot conținutul folderului dezarhivat, nu arhiva ZIP.
+4. Apasă **Commit changes**.
+5. Site-ul apare la `https://gmcracu.github.io`.
 
 ## Cum actualizezi conținutul
 
-Nu modifica `index.html` decât dacă vrei schimbări structurale. Pentru conținut, editează fișierele din folderul `data/`:
+Pentru această versiune, conținutul principal este în `js/app.js`, în obiectul `data`.
 
-- `site.json` – date profil, linkuri academice, statistici
-- `research.json` – direcții de cercetare
-- `publications.json` – publicații
-- `projects.json` – proiecte
-- `fieldwork.json` – punctele de pe hartă
+Poza de profil este:
 
-## Cum adaugi o poză
+`assets/images/profile.jpg`
 
-1. Încarcă poza în `assets/images/`, de exemplu `assets/images/fieldwork/piatra-mare-2026.jpg`.
-2. Adaugă referința în fișierul JSON potrivit, când vom activa galeria.
+O poți înlocui cu altă imagine, păstrând același nume.
 
-## Publicare pe GitHub Pages
+## Următorul pas
 
-Încarcă toate fișierele din acest folder direct în repository-ul `gmcracu.github.io`.
-Nu încărca arhiva ZIP, ci conținutul ei.
+În versiunea următoare mutăm conținutul în fișiere JSON separate:
 
-## Versiune
+- `data/publications.json`
+- `data/projects.json`
+- `data/courses.json`
+- `data/fieldwork.json`
 
-GeoPortfolio v1.0 – homepage academic + cercetare + publicații + proiecte + hartă interactivă.
