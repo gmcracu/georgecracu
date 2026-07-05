@@ -85,7 +85,7 @@ html[data-theme="light"] .map-art .label{fill:rgba(0,0,0,.42)}
 <body>
   <div class="noise"></div>
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Home">
+    <a class="brand" href="#" aria-label="Home" id="brandHome">
       <span class="brand-mark">GC</span>
       <span class="brand-text">George-Marius Cracu</span>
     </a>
@@ -325,6 +325,18 @@ observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecti
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 window.addEventListener('scroll',()=>document.querySelector('.site-header').classList.toggle('scrolled',window.scrollY>30));
 langBtn.addEventListener('click',()=>{state.lang=state.lang==='ro'?'en':'ro';applyLang()});themeBtn.addEventListener('click',()=>{state.theme=state.theme==='dark'?'light':'dark';setTheme()});
+
+const brandHome=document.getElementById('brandHome');
+if(brandHome){
+  brandHome.addEventListener('click',(event)=>{
+    event.preventDefault();
+    window.scrollTo({top:0,left:0,behavior:'smooth'});
+    if(history.replaceState){
+      history.replaceState(null,'',window.location.pathname);
+    }
+  });
+}
+
 setTheme();applyLang();initMap();
 
   </script>
