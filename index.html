@@ -104,9 +104,10 @@ html[data-theme="light"] .map-art .label{fill:rgba(0,0,0,.42)}
   </style>
 </head>
 <body>
+  <div id="siteTop" aria-hidden="true"></div>
   <div class="noise"></div>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Home">
+  <header class="site-header">
+    <a class="brand" href="#" data-scroll-top aria-label="Home">
       <span class="brand-mark">GC</span>
       <span class="brand-text">George-Marius Cracu</span>
     </a>
@@ -125,7 +126,7 @@ html[data-theme="light"] .map-art .label{fill:rgba(0,0,0,.42)}
   </header>
 
   <main>
-    <section class="hero fullscreen" id="top" aria-label="Hero">
+    <section class="hero fullscreen" id="home" aria-label="Hero">
       <div class="hero-bg"></div>
       <div class="terrain-lines"></div>
       <div class="hero-content">
@@ -345,6 +346,7 @@ let observer;function observe(){if(observer)document.querySelectorAll('.reveal')
 observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 window.addEventListener('scroll',()=>document.querySelector('.site-header').classList.toggle('scrolled',window.scrollY>30));
+document.querySelectorAll('[data-scroll-top]').forEach(link=>{link.addEventListener('click',(event)=>{event.preventDefault();history.replaceState(null,'',window.location.pathname);window.scrollTo({top:0,left:0,behavior:'smooth'});});});
 langBtn.addEventListener('click',()=>{state.lang=state.lang==='ro'?'en':'ro';applyLang()});themeBtn.addEventListener('click',()=>{state.theme=state.theme==='dark'?'light':'dark';setTheme()});
 setTheme();applyLang();initMap();
 
