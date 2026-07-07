@@ -1,1 +1,1 @@
-Copiază folderul assets/images/fieldwork/brasov-tampa-2023 în assets/images/fieldwork/. Copiază fișierele HTML în rădăcina repository-ului. Pentru cardul nou, înlocuiește practica-de-teren.html sau integrează cardul din acest fișier.
+Update complet: pagina practica-brasov-tampa-2023-complet.html include tot textul si toate cele 20 de imagini din documentul Word, cu caption-uri originale/curatate.
